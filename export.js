@@ -9,7 +9,7 @@ firestoreService.initializeApp(serviceAccount, databaseURL);
 
 // Start exporting your data
 firestoreService
-    .backups(['chats', 'follows', 'images', 'users'])
+    .backups(['follows', 'images', 'users','messages'])
     .then(collections => {
         // You can do whatever you want with collections
         console.log(JSON.stringify(collections));
